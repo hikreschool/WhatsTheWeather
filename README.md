@@ -6,8 +6,9 @@ This is a step-by-step challenge that guides you through the entire process of t
 
 **Important: Aside from the previous App Challenges, you will also be using what you've learned from hands-on activities**
 
-# What You Will Be Making - An app that displays the real-time price of Dogecoin
-<img width="378" alt="Screen Shot 2021-08-24 at 6 38 19 PM" src="https://user-images.githubusercontent.com/87120195/130604846-2f481d23-c918-4501-9159-7d7b40a8ef21.png">
+# What You Will Be Making - An app that displays the real-time weather data of a city
+<img width="1381" alt="weather data" src="https://user-images.githubusercontent.com/87120195/131660031-e743b9cc-3520-4eec-a9a0-3b264439c58a.png">
+
 
 
 # What You Will Be Learning
