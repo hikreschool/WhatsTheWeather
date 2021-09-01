@@ -124,7 +124,7 @@ JSON parsing is the art of converting JSON string into usable types or objects.
         
       
     
-Step 9: UI Updates - Insert this block of code
+Step 9: UI Updates - Insert this block of code under the UI updates section on your MainWeatherController file
 
 
   func updateUIWithWeatherData() {
@@ -135,7 +135,7 @@ Step 9: UI Updates - Insert this block of code
         
     }
 
-Step 10: Change City delegate - Insert the inside the function body of userEnteredANewCityName under Change City Delegates Method
+Step 10: Change City delegate - Insert this block of code inside the function body of userEnteredANewCityName under Change City Delegates Method
 
  
         let params : [String : String] = ["q" : city, "appid" : APP_KEY]
