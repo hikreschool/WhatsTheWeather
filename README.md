@@ -58,7 +58,7 @@ Step 4: Go back to terminal again and now do _pod install_. Wait until it's done
 
 **Part 2**
 
-Step 5: Import both libraries Alamofire and SwiftyJSON on the top of your ViewController file. 
+Step 5: Import both libraries Alamofire and SwiftyJSON on the top of your MainWeatherController file. 
 <img width="361" alt="Screen Shot 2021-08-24 at 6 45 49 PM" src="https://user-images.githubusercontent.com/87120195/130603726-e55837a9-f081-4bf7-ba94-7d9bc7880731.png">
 
 Step 6: In this project, you'll see a constant called APP_KEY. This will contain your API key.
