@@ -54,14 +54,14 @@ Step 3: Open the Pod file and put these two pods respectively in the file, _Alam
 <img width="283" alt="Screen Shot 2021-08-24 at 6 44 09 PM" src="https://user-images.githubusercontent.com/87120195/130603399-042482bb-14ce-4ad7-acbc-f25bef97c767.png">
 Note: Make sure you uncomment the _use_frameworks and target platform :ios, '9.0'_
 
-Step 6: Go back to terminal again and now do _pod install_. Wait until it's done. Then open your project using .xcworkspace
+Step 4: Go back to terminal again and now do _pod install_. Wait until it's done. Then open your project using .xcworkspace
 
 **Part 2**
 
-Step 7: Import both libraries Alamofire and SwiftyJSON on the top of your ViewController file. 
+Step 5: Import both libraries Alamofire and SwiftyJSON on the top of your ViewController file. 
 <img width="361" alt="Screen Shot 2021-08-24 at 6 45 49 PM" src="https://user-images.githubusercontent.com/87120195/130603726-e55837a9-f081-4bf7-ba94-7d9bc7880731.png">
 
-Step 8: In this project, you'll see a constant called APP_KEY. This will contain your API key.
+Step 6: In this project, you'll see a constant called APP_KEY. This will contain your API key.
 Make sure you verify your account through your email!
 
 So all you need to do is set up your own free account on OpenWeatherMap and get a free appid. You can get one here:
@@ -75,7 +75,7 @@ Afterwards you'll need to replace the appid variable named "APP_KEY" with your o
 
 **Part 3**
 
-Step 10: Networking - Insert this block of code inside your MainWeatherController file
+Step 7: Networking - Insert this block of code inside your MainWeatherController file
 Networking is when you communicate to other computers in the world wide web. In a simple sense, networking in Swift involves writing a block of code that fetches data from other web platform or services so you can utilize their existing datasets.
 
 
@@ -102,7 +102,7 @@ Networking is when you communicate to other computers in the world wide web. In 
         
     }
 
-Step 11: JSON Parsing - And this one too just under the block of code from Networking
+Step 8: JSON Parsing - And this one too just under the block of code from Networking
 JSON parsing is the art of converting JSON string into usable types or objects. 
 
      func updateWeatherData(json : JSON) {
@@ -123,7 +123,7 @@ JSON parsing is the art of converting JSON string into usable types or objects.
         
       
     
-Step 12: UI Updates - Insert this block of code
+Step 9: UI Updates - Insert this block of code
 
 
   func updateUIWithWeatherData() {
@@ -134,7 +134,7 @@ Step 12: UI Updates - Insert this block of code
         
     }
 
-Step 13: Change City delegate - Insert the inside the function body of userEnteredANewCityName under Change City Delegates Method
+Step 10: Change City delegate - Insert the inside the function body of userEnteredANewCityName under Change City Delegates Method
 
  
         let params : [String : String] = ["q" : city, "appid" : APP_KEY]
@@ -143,7 +143,7 @@ Step 13: Change City delegate - Insert the inside the function body of userEnter
 
 
 
-Step 12: Call or invoke getWeatherData(url: WEATHER_URL, parameters: params) on the first locationManager delegate method under "let params"
+Step 11: Call or invoke getWeatherData(url: WEATHER_URL, parameters: params) on the first locationManager delegate method under "let params"
 
 
 Final step: Run the app and make sure it displays real-time data of a sample weather data of San Francisco and test it by changing the location of the city
