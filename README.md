@@ -62,11 +62,12 @@ Step 5: Import both libraries Alamofire and SwiftyJSON on the top of your MainWe
 <img width="361" alt="Screen Shot 2021-08-24 at 6 45 49 PM" src="https://user-images.githubusercontent.com/87120195/130603726-e55837a9-f081-4bf7-ba94-7d9bc7880731.png">
 
 Step 6: In this project, you'll see a constant called APP_KEY. This will contain your API key.
-Make sure you verify your account through your email!
 
 So all you need to do is set up your own free account on OpenWeatherMap and get a free appid. You can get one here:
 
 http://openweathermap.org/appid
+
+Make sure you verify your account through your email after!
 
 Afterwards you'll need to replace the appid variable named "APP_KEY" with your own app id for your app to work. When you create your account on OpenWeatherMap, you'll see this key on your API keys. Copy paste into your constant "APP_KEY" on Xcode.
 
