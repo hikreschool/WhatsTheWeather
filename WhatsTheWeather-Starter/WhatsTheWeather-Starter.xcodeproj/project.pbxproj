@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -195,7 +195,6 @@
 				8E6B19839F6E99915FBD4189 /* Pods-WhatsTheWeather-StarterTests.debug.xcconfig */,
 				72F1FA2F66A6437AAD1F8150 /* Pods-WhatsTheWeather-StarterTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
