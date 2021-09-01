@@ -61,8 +61,7 @@ Step 6: Go back to terminal again and now do _pod install_. Wait until it's done
 Step 7: Import both libraries Alamofire and SwiftyJSON on the top of your ViewController file. 
 <img width="361" alt="Screen Shot 2021-08-24 at 6 45 49 PM" src="https://user-images.githubusercontent.com/87120195/130603726-e55837a9-f081-4bf7-ba94-7d9bc7880731.png">
 
-Step 8: In this project, you'll see a constant called APP_KEY. This used to be the school app id that we supply for students to get up and running quickly. However, some students have been using it as the app id in their production apps that have been uploaded to the app store. As we get billed for any apps that hit up the app id more than 60 times per minute, we've had to disable this particular appid.
-
+Step 8: In this project, you'll see a constant called APP_KEY. This will contain your API key.
 Make sure you verify your account through your email!
 
 So all you need to do is set up your own free account on OpenWeatherMap and get a free appid. You can get one here:
