@@ -25,7 +25,7 @@ This is a step-by-step challenge that guides you through the entire process of t
 4. Alamofire
 5. SwiftyJSON
 6. Http request
-7. Core Location
+7. Introduction Core Location
 
 
 # Coding advice
