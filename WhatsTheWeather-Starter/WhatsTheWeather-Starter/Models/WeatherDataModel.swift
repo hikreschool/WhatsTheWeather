@@ -16,9 +16,39 @@ class WeatherDataModel {
     var city : String = ""
     var weatherIconName : String = ""
     
+    //This method turns a condition code into the name of the weather condition image
+    func getTempColor() -> [Float] {
+        let temp = Float(self.temperature)
+        let max = Float(256.0)
+        let over8 = Float(32.0)
+        let over10 = Float(25.6)
+        let over20 = Float(12.8)
+        var colorBlue: Float = 0.0
+        var colorGreen: Float = 0.0
+        var colorRed: Float = 0.0
+        if (temp < 20.0) {
+            colorBlue = ((20.0 - temp) * over20)/max
+        }
+        if (temp < 30) && (temp >= 22) {
+            colorGreen = ((30 - temp) * over8)/max
+        }
+        if (temp < 22) && (temp >= 14) {
+            colorGreen = ((temp - 14) * over8)/max
+        }
+        if (temp > 26) && (temp <= 36)  {
+            colorRed = (256 - ((36 - temp) * over10))/max
+        }
+        if (temp > 36) && (temp <= 46) {
+            colorRed = (256 - (temp - 36))/max
+        }
+        if (temp > 46) {
+            colorRed = 0.5
+        }
+        
+        return [colorRed,  colorGreen,  colorBlue]
+    }
     
     //This method turns a condition code into the name of the weather condition image
-    
     func updateWeatherIcon(condition: Int) -> String {
         
     switch (condition) {

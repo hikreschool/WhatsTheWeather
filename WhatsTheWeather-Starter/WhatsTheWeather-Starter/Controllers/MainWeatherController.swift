@@ -90,7 +90,10 @@ class MainWeatherController: UIViewController, CLLocationManagerDelegate, Change
     
     //Write the updateUIWithWeatherData method here:
     func updateUIWithWeatherData() {
+        
+        let tempColor = weatherDataModel.getTempColor()
         self.temperatureLabel.text = "\(weatherDataModel.temperature)º"
+        self.temperatureLabel.textColor = UIColor(red: CGFloat(tempColor[0]), green: CGFloat(tempColor[1]), blue: CGFloat(tempColor[2]), alpha: 1.0)
         self.weatherIcon.image = UIImage(named: weatherDataModel.weatherIconName)
         self.cityLabel.text = weatherDataModel.city
     }
